@@ -1,0 +1,21 @@
+{
+    "name": "flight-path-api",
+    "version": "1.0.0",
+    "description": "API to calculate flight paths",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "test": "mocha"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "body-parser": "^1.19.0",
+      "ejs": "^3.1.6"
+    },
+    "devDependencies": {
+      "mocha": "^8.3.2",
+      "chai": "^4.3.4",
+      "chai-http": "^4.3.0"
+    }
+  }
+  

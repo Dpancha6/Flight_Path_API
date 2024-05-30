@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Path Calculator</title>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Flight Path Calculator</h1>
+    <form id="flightForm">
+      <textarea
+        id="flightsInput"
+        placeholder='Enter flights as source-destination pairs in a format like [["IND", "EWR"], ["SFO", "ATL"], ["GSO", "IND"], ["ATL", "GSO"]]'
+        rows="10"
+        cols="50"
+      >
+[["IND", "EWR"], ["SFO", "ATL"], ["GSO", "IND"], ["ATL", "GSO"]]</textarea
+      >
+      <button type="submit">Calculate Path</button>
+    </form>
+    <h2>Calculated Flight Path:</h2>
+    <p id="result"></p>
+  </body>
+</html>
