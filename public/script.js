@@ -14,7 +14,9 @@ document.getElementById("flightForm").addEventListener("submit", async (e) => {
     });
 
     if (!response.ok) {
-      throw new Error("Failed to calculate flight path");
+      throw new Error(
+        'Failed to calculate flight path: Enter flights in a format like [["IND", "EWR"], ["SFO", "ATL"], ["GSO", "IND"], ["ATL", "GSO"]]'
+      );
     }
 
     const data = await response.json();
